@@ -3,6 +3,9 @@
 ## Overview
 This library contains reusable intelligence patterns that help interfaces adapt to human behavior. Each pattern recognizes when someone is struggling and responds with helpful visual changes.
 
+**Learning Interface Context:**
+These patterns are specifically designed to reduce confusion in learning environments by recognizing cognitive load signals and providing contextual visual support. They help learners navigate complex interfaces without overwhelming them, supporting both novice exploration and expert efficiency.
+
 ---
 
 ## Pattern 1: Focus Assist
@@ -17,7 +20,7 @@ This library contains reusable intelligence patterns that help interfaces adapt 
 - Adds a subtle border to draw attention
 
 **Why this helps:**
-When people are confused, they need clear guidance. By making the most important action obvious, we reduce their mental effort and help them move forward confidently.
+Reduces cognitive load by eliminating choice paralysis - when learners are confused, highlighting the primary action path helps them progress without mental strain.
 
 **Duration:** 3 seconds
 
@@ -35,7 +38,7 @@ When people are confused, they need clear guidance. By making the most important
 - Creates gentle breathing animation to calm anxiety
 
 **Why this helps:**
-When people hover repeatedly, they're often feeling uncertain. The soft, warm response reduces pressure and creates a calming environment for decision-making.
+Supports decision-making by reducing visual noise - when learners show indecision, dimming alternatives helps focus attention and reduces overwhelm.
 
 **Duration:** 4 seconds
 
@@ -53,7 +56,7 @@ When people hover repeatedly, they're often feeling uncertain. The soft, warm re
 - Creates directional visual cues for guidance
 
 **Why this helps:**
-When someone is backtracking, they need gentle guidance. The arrows and directional pulses help them understand their path without being overwhelming.
+Prevents navigation confusion by providing spatial orientation - when learners feel lost, visual cues restore their sense of location and direction.
 
 **Duration:** 3.5 seconds
 
@@ -71,9 +74,30 @@ When someone is backtracking, they need gentle guidance. The arrows and directio
 - Provides subtle feedback without interruption
 
 **Why this helps:**
-When someone is deeply focused, we want to support that state without breaking their concentration. The gentle pulse confirms they're in the right place and encourages continued engagement.
+Reinforces focused attention without disruption - when learners are deeply engaged, subtle feedback validates their focus and maintains flow state.
 
 **Duration:** 4 seconds
+
+---
+
+## Pattern 5: Quick Combo (Fast Action)
+
+**What triggers it:**
+- User performs rapid sequential actions (fast-action behavior)
+- Shows confident, experienced interaction patterns
+
+**How the UI responds:**
+- Briefly highlights affected areas with quick flash
+- Provides immediate visual feedback for rapid interactions
+- Uses fast, snappy animations to match user pace
+
+**Why this helps:**
+Acknowledges expert behavior by matching interaction speed - when learners demonstrate mastery, responsive feedback maintains their efficient workflow.
+
+**Learning Context Note:**
+This pattern is learning-safe as it only activates for confident, rapid actions. It supports advanced learners without overwhelming beginners, since slow, hesitant users won't trigger it.
+
+**Duration:** 1.5 seconds
 
 ---
 
